@@ -1,0 +1,18 @@
+<div class="wrapper">
+    <h1 style="text-align:center">
+        {{ title }}!
+    </h1>
+
+    <div class="buttons">
+      <button [ngClass]="{'selected': color === 'PST'}" (click)="getDateByZone('PST')">PST</button>
+      <button [ngClass]="{'selected': color === 'MST'}" (click)="getDateByZone('MST')">MST</button>
+      <button [ngClass]="{'selected': color === 'CST'}" (click)="getDateByZone('CST')">CST</button>
+      <button [ngClass]="{'selected': color === 'EST'}" (click)="getDateByZone('EST')">EST</button>
+
+      <button class="clear" (click)="Clear()">Clear</button>
+    </div>
+
+    <h1 style="text-align:center">
+        {{ time }}
+    </h1>
+</div>
